@@ -64,24 +64,37 @@
   background-color: #ffbd39;
 }
 
+.certificates-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .certificates-list {
   display: flex;
-  justify-content: center;  /* center images */
+  justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;              /* space between images */
-  list-style: none;         /* remove default bullet points */
+  gap: 1.5rem;
+  list-style: none;
   padding: 0;
-  margin: 0;
-  flex-wrap: wrap;          /* allows wrapping on small screens */
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.certificates-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .certificates-list li img {
-  width: 200px;             /* make images smaller */
+  width: 200px; /* Adjust size here */
   max-width: 100%;
+  object-fit: contain; /* Ensures full certificate is visible */
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
+  background: white;
 }
 
 .certificates-list li img:hover {
@@ -580,7 +593,7 @@
 		</div>
 	</section>
 
-<section class="ftco-section certificates-section ftco-no-pb" id="certificates-section">
+<!--<section class="ftco-section certificates-section ftco-no-pb" id="certificates-section">
   <div class="container">
 	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -591,10 +604,28 @@
       <li><img src="images/LOR.jpg" alt="Certificate 1"></li>
       <li><img src="images/about2.png" alt="Certificate 2"></li>
       <li><img src="images/about2.png" alt="Certificate 3"></li></ul>
-      <!-- Add more <img> tags as needed -->
 	</div>
     </div>
 	</div>
+</section>-->
+	  <section class="ftco-section ftco-no-pb" id="certificates-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Awards & Certificates</h1>
+        <h2 class="mb-4">Awards & Certificates</h2>
+      </div>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="certificates-wrapper">
+      <ul class="certificates-list">
+        <li><img src="images/LOR.jpg" alt="Certificate 1"></li>
+        <li><img src="images/about2.png" alt="Certificate 2"></li>
+        <li><img src="images/about2.png" alt="Certificate 3"></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
